@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #circle{
+            width: 50px;
+            height: 50px;
+            background: red;
+            border-radius: 100%;
+            position:relative;
+            animation-name: rouge;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        #circle2{
+            width: 50px;
+            height: 50px;
+            background: blue;
+            border-radius: 100%;
+            position:relative;
+            animation-name: blue;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes rouge{
+            0%{top:0px;left:0px;}
+            25%{left:100px;top:0px;}
+            50%{top:100px;left:100px;}
+            75%{left:0px;top:100px;}
+            100%{left:0px;top:0%;}
+        }
+        @keyframes blue{
+            0%{top:0px;left:0px;}
+            25%{left:0px;top:100px;}
+            50%{top:100px;left:100px;}
+            75%{left:100px;top:0px;}
+            100%{left:0px;top:0px;}
+        }
+    </style>
+</head>
+<body>
+    <div id="circle">
+
+    </div>
+    <div id="circle2">
+
+    </div>
+    <script src="game1.js">
+
+    </script>
+</body>
+</html>
